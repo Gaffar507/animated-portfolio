@@ -1,0 +1,9 @@
+export{ default as Vector1} from "../../img/Vector1.png";
+export{ default as Vector2} from "../../img/Vector2.png";
+export{ default as boy} from "../../img/boy.png";
+export{ default as glassesemoji} from "../../img/glassesimoji.png";
+export{ default as thumpup} from "../../img/thumbup.png";
+export{ default as crown} from "../../img/crown.png";
+export{ default as Github}  from "../../img/github.png";
+export{ default as LinkedIn}  from "../../img/linkedin.png";
+export{ default as instagram} from "../../img/instagram.png";

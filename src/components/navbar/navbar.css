@@ -1,0 +1,116 @@
+.navbar-container{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.navbar-left{
+    flex: 1;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    gap: 1rem;
+    margin-top: -1rem;
+}
+.nav-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 400;
+}
+.nav-icon{
+    display: none;
+}
+.links{
+    display: flex;
+    margin-top: 0rem;
+}
+.links>li{
+    margin-right: 1rem;
+    font-size: -1rem;
+}
+.links>li>a{
+    font-size: .9rem ;
+    color: black;
+    transition: var(--transition);
+}
+.links>li>a:hover{
+    color: blue;
+}
+.btn {
+    background-color: rgba(255, 153, 0, 0.698);
+    border-radius: .5rem;
+    transition: var(--transition);
+    text-rendering: optimizeSpeed;
+    font-size: .9rem;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.contact{
+    margin-top: -1rem;
+}
+@media screen and (max-width:570px) {
+    .navbar-container{
+        flex-direction: column;
+        margin-bottom: -5rem;
+        position: relative;
+    }
+    .navbar-left{
+        margin-top: -.1rem;
+    }
+    .links{
+        display: none; 
+        z-index: 9;
+    }
+    .show-links{
+        display: inline-block;
+        background-color: rgba(0, 214, 238, 0.157);
+        border-radius: .5rem;
+        margin-top: 1.3rem;
+        padding: .5rem;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+ 
+    }
+    .show-links>li{
+        margin-bottom: .5rem;
+        align-items: flex-end;
+    }
+    .links>li{
+        margin-right: 0rem;
+    }
+    .links>li>a{
+        font-size: .8rem;
+    }
+    .navbar-left{
+        scale: .8;
+        align-self: flex-start;
+    }
+    .nav-icon{
+        display: block;
+        margin-top: -2rem;
+        border-radius: .2rem;
+    }
+    .nav-btn:hover{
+        cursor: pointer;
+    }
+    .nav-btn{
+        display: flex;
+        justify-content: center;
+        scale: .8;
+        background-color: rgba(237, 162, 0, 0.482);
+        position: absolute;
+        right: 1rem;
+        top: .3rem;
+    }
+}
